@@ -1,7 +1,7 @@
 # Seade
 A C# configuration management system. Code-first, lightweight.
 
-https://www.nuget.org/packages/Seade
+https://www.nuget.org/packages/Seade-Config 
 
 ## Why another configuration management system?
 .Net settings are not good enough:
