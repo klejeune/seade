@@ -12,7 +12,7 @@ https://www.nuget.org/packages/Seade-Config
 Seade can help you define better configuration files/classes:
 * define your settings in a C# class
 * your configuration file(s) are written in json
-* you can split your configuration in seperate files/directories
+* you can split your configuration in separate files/directories
 
 Define your settings in a C# class, make it inherit the ConfigurationBase class, define where you want to read your settings, and you're set.
 
@@ -53,7 +53,7 @@ In most cases, you may define the configuration instance at startup and always u
 
 ### Multiple files
 You can split your configuration in several classes/files to make it more readable. The ConfigurationService constructor parameter allows you to choose
-	where your fils are stored. You can even reproduce the same direcotry structure as your code by using the namespace values.
+	where your files are stored. You can even reproduce the same directory structure as your code by using the namespace values.
 
 ### JSON configuration file template
 An second optional parameter can be used to create a default configuration file with the right structure:
