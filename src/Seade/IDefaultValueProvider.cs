@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Seade.Core
+namespace Seade
 {
     public interface IDefaultValueProvider
     {

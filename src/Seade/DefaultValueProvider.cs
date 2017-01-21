@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Seade.Core
+namespace Seade
 {
     public class DefaultValueProvider : IDefaultValueProvider
     {

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <!--<licenseUrl></licenseUrl>-->
+    <projectUrl>https://github.com/klejeune/seade</projectUrl>
+    <!--<iconUrl></iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Teclyn project initialisation</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Seade Configuration Json IoC Dependency Injection</tags>
+  </metadata>
+</package>

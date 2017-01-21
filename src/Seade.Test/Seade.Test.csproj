@@ -57,9 +57,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Seade.Core\Seade.Core.csproj">
+    <ProjectReference Include="..\Seade\Seade.csproj">
       <Project>{3380693e-d9b9-414f-b492-e2204beabe67}</Project>
-      <Name>Seade.Core</Name>
+      <Name>Seade</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -8,7 +8,7 @@ A C# configuration management system. Code-first, lightweight.
 
 ## What is Seade?
 Seade can help you define better configuration files/classes:
-* define your settings in a C#
+* define your settings in a C# class
 * your configuration file(s) are written in json
 * you can split your configuration in seperate files/directories
 

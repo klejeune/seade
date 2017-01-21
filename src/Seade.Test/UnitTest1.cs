@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Seade.Core;
+using Seade;
 using Seade.Test.Models;
 
 namespace Seade.Test

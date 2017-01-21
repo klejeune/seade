@@ -1,4 +1,4 @@
-﻿namespace Seade.Core
+﻿namespace Seade
 {
     public interface IConfigurationService
     {

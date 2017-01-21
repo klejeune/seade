@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Reflection;
-using Seade.Core;
+using Seade;
 
 namespace Seade.Test.Models
 {

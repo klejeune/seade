@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
 
-namespace Seade.Core
+namespace Seade
 {
     public class ConfigurationService : IConfigurationService
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Seade.Core;
+using Seade;
 
 namespace Seade.Test.Models
 {
