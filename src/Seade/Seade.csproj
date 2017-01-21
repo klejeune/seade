@@ -8,8 +8,8 @@
     <ProjectGuid>{3380693E-D9B9-414F-B492-E2204BEABE67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Seade.Core</RootNamespace>
-    <AssemblyName>Seade.Core</AssemblyName>
+    <RootNamespace>Seade</RootNamespace>
+    <AssemblyName>Seade</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

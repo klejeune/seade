@@ -1,6 +1,8 @@
 # Seade
 A C# configuration management system. Code-first, lightweight.
 
+https://www.nuget.org/packages/Seade
+
 ## Why another configuration management system?
 .Net settings are not good enough:
 * they are written in XML
@@ -16,6 +18,11 @@ Define your settings in a C# class, make it inherit the ConfigurationBase class,
 
 ## How does it work?
 Here is an example.
+
+Install the Seade Nuget package: 
+```
+Install-Package Seade
+```
 
 Define your settings class:
 ```
