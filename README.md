@@ -53,7 +53,7 @@ In most cases, you may define the configuration instance at startup and always u
 
 ### Multiple files
 You can split your configuration in several classes/files to make it more readable. The ConfigurationService constructor parameter allows you to choose
-	where your fils are stored. You can event reproduce the same direcotry structure as your code by using the namespace values.
+	where your fils are stored. You can even reproduce the same direcotry structure as your code by using the namespace values.
 
 ### JSON configuration file template
 An second optional parameter can be used to create a default configuration file with the right structure:
