@@ -21,7 +21,7 @@ Here is an example.
 
 Install the Seade Nuget package: 
 ```
-Install-Package Seade
+Install-Package Seade-Config 
 ```
 
 Define your settings class:
