@@ -63,19 +63,22 @@ var service = new ConfigurationService(
 	(type, content) => File.WriteAllText($@"conf\{type.Name}.json", content));
 ```
 
+The writing action will be performed the first time the configuration class is instanciated. It will write a json file with
+default values.
+
 ### Non configurable settings
 You can define non configurable settings by
 	providing a constant value instead of a setter. The json file won't contain the setting, but you will be able to use it in your program:
 ```C#
-    public string ReadOnlySetting => "Read only value";
+public string ReadOnlySetting => "Read only value";
 ```
 
 ### Read only properties
 Your configuration file properties must be writeable (ie. have a "set;") in order to be used in the json file. If you want to provide read only configuration 
 	to your other services, you can:
-* make the setters private (bad because it won't be easily useable in unit tests)
-* make the setters protected (better because your unit tests will be able to set values in a subclass)
-* let the setters public, but provide an read only interface (without the setters) to your other services
+* make the setters private (that's bad because it won't be easily useable in unit tests)
+* make the setters protected (that's better because your unit tests will be able to set values in a subclass)
+* let the setters public, but provide a read only interface (without the setters) to your other services (that's also an acceptable solution)
 
 ### Custom default values
 If a json setting is null or absent, the associated property will have a default value.
@@ -95,7 +98,7 @@ public class CustomDefaultValueProvider : DefaultValueProvider
     {
         if (propertyInfo.PropertyType == typeof(string))
         {
-            return "my default string;
+            return "my default string";
         }
         else
         {
@@ -103,6 +106,10 @@ public class CustomDefaultValueProvider : DefaultValueProvider
         }
     }
 }
+
+.
+.
+.
 
 var service = new ConfigurationService(type => File.ReadAllText($@"conf\{type.Name}.json"), new CustomDefaultValueProvider());
 ```
