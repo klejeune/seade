@@ -25,7 +25,7 @@ Install-Package Seade-Config
 ```
 
 Define your settings class:
-```
+```C#
 public class MyConfiguration : ConfigurationBase
 {
     public MyConfiguration(IConfigurationService configurationService) : base(configurationService) {}
@@ -36,12 +36,12 @@ public class MyConfiguration : ConfigurationBase
 ```
 
 At the startup of your app or website, create a ConfigurationService instance :
-```
+```C#
 var service = new ConfigurationService(type => File.ReadAllText($@"conf\{type.Name}.json"));
 ```
 
 You can instantiate you settings class by calling:
-```
+```C#
 var myConfiguration = new MyConfiguration(service);
 ```
 The values will be read from your json file during the MyConfiguration() constructor execution.
@@ -57,7 +57,7 @@ You can split your configuration in several classes/files to make it more readab
 
 ### JSON configuration file template
 An second optional parameter can be used to create a default configuration file with the right structure:
-```
+```C#
 var service = new ConfigurationService(
 	type => File.ReadAllText($@"conf\{type.Name}.json"),
 	(type, content) => File.WriteAllText($@"conf\{type.Name}.json", content));
@@ -66,7 +66,7 @@ var service = new ConfigurationService(
 ### Non configurable settings
 You can define non configurable settings by
 	providing a constant value instead of a setter. The json file won't contain the setting, but you will be able to use it in your program:
-```
+```C#
     public string ReadOnlySetting => "Read only value";
 ```
 
@@ -88,7 +88,7 @@ Default values for some types are provided:
 - class types with a parameterless constructor
 
 If extra types need to have default values, or if the provided ones must be changed, you can inherit from DefaultValueProvider:
-```
+```C#
 public class CustomDefaultValueProvider : DefaultValueProvider
 {
     public override object GetDefaultValue(PropertyInfo propertyInfo)
