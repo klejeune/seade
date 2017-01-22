@@ -111,7 +111,9 @@ public class CustomDefaultValueProvider : DefaultValueProvider
 .
 .
 
-var service = new ConfigurationService(type => File.ReadAllText($@"conf\{type.Name}.json"), new CustomDefaultValueProvider());
+var service = new ConfigurationService(
+    type => File.ReadAllText($@"conf\{type.Name}.json"), 
+    new CustomDefaultValueProvider());
 ```
 
 ## Why "Seade"?
