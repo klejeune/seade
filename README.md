@@ -113,3 +113,6 @@ public class CustomDefaultValueProvider : DefaultValueProvider
 
 var service = new ConfigurationService(type => File.ReadAllText($@"conf\{type.Name}.json"), new CustomDefaultValueProvider());
 ```
+
+## Why "Seade"?
+"Seade" means "setting" in Estonian.
